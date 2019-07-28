@@ -1,20 +1,25 @@
 {
-    "type": "sqlite",
-    "database": "database.sqlite",
-    "synchronize": false,
-    "logging": true,
-    "entities": [
-       "src/entity/**/*.ts"
-    ],
-    "migrations": [
-       "src/migration/**/*.ts"
-    ],
-    "subscribers": [
-       "src/subscriber/**/*.ts"
-    ],
-    "cli": {
-       "entitiesDir": "src/entity",
-       "migrationsDir": "src/migration",
-       "subscribersDir": "src/subscriber"
-    }
- }
+  "type": "mariadb",
+  "host": "localhost",
+  "port": 3306,
+  "username": "ehdb",
+  "password": "ehdb",
+  "database_": "database.sqlite",
+  "database": "ehdb",
+  "synchronize": true,
+  "logging": false,
+  "entities": [
+    "src/entity/**/*.ts"
+  ],
+  "migrations": [
+    "src/migration/**/*.ts"
+  ],
+  "subscribers": [
+    "src/subscriber/**/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
