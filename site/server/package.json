@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node ./src/index.ts"
+    "start": "ts-node ./src/index.ts",
+    "generate": "node -r ts-node/register --max-old-space-size=4096 ./src/generateDataFile.ts"
   },
   "keywords": [],
   "author": "",
