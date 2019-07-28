@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "reflect-metadata": "^0.1.10",
     "sqlite3": "^4.0.3",
+    "tslint": "^5.18.0",
     "typeorm": "0.2.18"
   },
   "devDependencies": {
