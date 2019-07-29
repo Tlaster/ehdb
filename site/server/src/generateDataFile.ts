@@ -17,7 +17,7 @@ createConnection().then(async connection => {
     console.log('starting...');
     setInterval(() => {
         console.log(`${limit.pendingCount} remaining...`);
-    }, 3000);
+    }, 30000);
     const tasks = Object.values(data).map((it: any) => {
         return limit(async () => {
             const gallery = new Gallery();
