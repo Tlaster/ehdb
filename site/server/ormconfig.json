@@ -1,13 +1,14 @@
 {
-  "type": "mariadb",
-  "host": "localhost",
-  "port": 3306,
-  "username": "ehdb",
-  "password": "ehdb",
-  "database_": "database.sqlite",
-  "database": "ehdb",
-  "synchronize": true,
-  "logging": false,
+  "type": "sqlite",
+  "database": "database.sqlite",
+  "type_": "mariadb",
+  "host_": "localhost",
+  "port_": 3306,
+  "username_": "ehdb",
+  "password_": "ehdb",
+  "database_": "ehdb",
+  "synchronize": false,
+  "logging": true,
   "entities": [
     "src/entity/**/*.ts"
   ],
