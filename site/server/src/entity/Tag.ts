@@ -1,5 +1,5 @@
-import { PrimaryGeneratedColumn, Column, Entity, Unique, ManyToMany } from "typeorm";
-import { Gallery } from "./Gallery";
+import {PrimaryGeneratedColumn, Column, Entity, Unique, ManyToMany} from 'typeorm';
+import {Gallery} from './Gallery';
 
 @Unique(['name'])
 @Entity()
@@ -11,5 +11,5 @@ export class Tag {
     name: string;
 
     @ManyToMany(type => Gallery, gallery => gallery.tags)
-    gallery: Gallery[]
+    gallery: Gallery[];
 }
